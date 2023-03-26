@@ -1,0 +1,39 @@
+Link to Image: https://imgur.com/a/74zZ8kn
+
+
+Description
+This basic web infrastructure hosts a website called "www.foobar.com". The server that houses this site has various componenets included and they share the resources of the server such as CPU, RAM and Storage
+
+
+Specifications of the Infrastructure
+- What is a server
+    A server is basically a computer that renders services to other computers (clients).
+
+- What is the role of the domain name
+    The domain name is an alias for an IP address of a site. This alias is in text format which is much friendly to humans. The alias for 8.8.8.8 in this project is www.foobar.com which is recorded in the DNS
+
+- What type of DNS record www is in www.foobar.com
+    The DNS record for www.foobar.com is an AAA (IPv4) record. This can be found by typing 'dig www.foobar.com' into a terminal
+
+- What is the role of the web server
+    The web server receives HTTP / HTTPS requests from clients and then provides the info that is needed or sends back an error to the client.
+
+- What is the role of the application server
+    The app server houses applications that are provided to users. An example is the apps (Photoshop, Premiere Pro) that Adobe provides its users
+
+- What is the role of the database
+    The database keeps records of information that it is provided. It performs CRUD (Create, Read, Update, Delete) operations to the records
+
+- What is the server using to communicate with the computer of the user requesting the website
+    The Transmission Control Protocol (TCP) / Internet Protocol (IP) communication is used between client and server
+
+
+Problems of the Infrastructure
+- SPOF
+    In this task, we are working with a single server which provides an SPOF. When there is an issue with the databse system, then no records can be retrieved.
+
+- Downtime when maintenance needed (like deploying new code web server needs to be restarted)
+    During maintenance, the server needs to be taken offline. This means that the web site becomes inaccessible to users.
+
+- Cannot scale if too much incoming traffic
+    At moments that there is a significant increase in traffic, the site will slow down due to maximum usage of resources

@@ -1,0 +1,30 @@
+Link to Image: https://imgur.com/a/hiaLhDB
+
+
+Specifications of the Infrastructure
+- For every additional element, why you are adding it
+    The number of servers has increased from 1 to 2. When there is an increase in traffic to the site, the load balancer will help in sharing the traffic between both servers to reduce stress on either of them.
+
+- What distribution algorithm your load balancer is configured with and how it works
+    This HAproxy load balancer uses the Round Robin distribution algorithm. The weights of the servers are known by the load balancer. It then distributes the traffic to the servers according to their weights.
+
+- Is your load-balancer enabling an Active-Active or Active-Passive setup, explain the difference between both
+    The load balncer has an Active-Passive setup. With an Active-Active setup, the traffic is shared equally among all servers to prevent oveloading a particular server. With an Active-Passive setup, the traffic is provided to the primary server while the secondary one remains on standby for any command.
+
+- How a database Primary-Replica (Master-Slave) cluster works
+    With a Primary-replica cluster, one server is made the primary one and the other server is made the secondary one. The primary server perfoms read and write operations while the secondary server performs read operations only. The data is synced between them whenever a write operation is performed.
+
+- What is the difference between the Primary node and the Replica node in regard to the application
+    The primary node can perform both read and write operation while the secondary can perform read operation
+
+
+
+Problems of the Infrastructure
+- Where are SPOF
+    When there is a failure with the primary server, then changes cannot be made to the databse. The load balancer can also act as aN SPOF. If the load balancer goes down, the entire site goes down
+
+- Security issues (no firewall, no HTTPS)
+    The system transports data using HTTP which isn't secure and so hackers can have access to the data.
+
+- No monitoring
+    The status of either of the servers cannot be known since the site isn't monitored

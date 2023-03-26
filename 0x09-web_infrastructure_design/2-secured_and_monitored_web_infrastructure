@@ -1,0 +1,32 @@
+Link to Image: https://imgur.com/a/jdSZPKt
+
+
+Specifications of the Infrastructure
+- For every additional element, why you are adding it
+    SSL certificates were addeed to make transactions secure. Firewalls were also added to boost security.
+
+- What are firewalls for
+    A firewall is a hardward or software that is designed to stop unauthorised access to a network. It uses predefined rules to filter data entering and leaving the network.
+
+- Why is the traffic served over HTTPS
+    HTTPS is used to ensure that transactions made over the web site is secure and cannot be spyed upon by hackers.
+
+- What monitoring is used for
+    The monitoring system observes the performance of the network by collecting data. The collected data is used to make decisions to boost performance if the need be. This makes it easier to solve problems in the network.
+
+- How the monitoring tool is collecting data
+    Once the server is up and running, the monitoring tool begins to collect data for observation which makes it simple to detect errors quickly.
+
+- Explain what to do if you want to monitor your web server QPS
+    The montoring tool has metric system which can monitor the queries per second. This measurement checks if the network can handle the traffic.
+
+
+Problems of the Infrastructure
+- Why terminating SSL at the load balancer level is an issue
+    When info moves from the load balancer to the server, normal HTTP is used. This makes the info less secure and prey to attackers.
+
+- Why having only one MySQL server capable of accepting writes is an issue
+    When that server fails or goes down, then changes cannot be made to the databse any longer.
+
+- Why having servers with all the same components (database, web server and application server) might be a problem
+    The resources will be shared among the components thereby reducing performance. This becomes difficult to scale
