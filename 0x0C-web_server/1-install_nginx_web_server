@@ -3,7 +3,7 @@
 # Returns a page with "Hello World" on it
 
 sudo apt-get update
-sudo apt-get install -y nginx
-echo 'Hello World' > /var/www/html/index.html
+sudo apt-get -y install nginx
+echo 'Hello World!' > /var/www/html/index.html
 
 sudo service nginx start
