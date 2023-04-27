@@ -2,7 +2,7 @@
 
 # Add nginx package to repo
 exec { 'add nginx stable repo':
-  command => 'sudo apt-get-repository ppa:nginx/stable',
+  command => 'sudo add-apt-repository ppa:nginx/stable',
   path    => '/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
 }
 
@@ -13,7 +13,7 @@ exec { 'update packages':
 }
 
 # Install nginx package
-exec { 'nginx':
+package { 'nginx':
   ensure => 'installed'
 }
 
@@ -68,12 +68,12 @@ file { 'Nginx default config file':
 
 # Restart nginx service
 exec { 'restart service':
-  command => 'sudo service nginx restart'.
+  command => 'sudo service nginx restart',
   path    => '/usr/bin:/usr/sbin:/bin'
 }
 
 # Start nginx service
-exec { 'nginx':
+service { 'nginx':
   ensure  => running,
   require => Package['nginx']
 }
