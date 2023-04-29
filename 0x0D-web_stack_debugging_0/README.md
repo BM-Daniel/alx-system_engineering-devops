@@ -4,7 +4,7 @@
 
 ## Background Context
 
-The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (thatâ€™s the â€œfunâ€ part of the job!).
+The Webstack debugging series will train you in the art of debugging. Computers and software rarely work the way we want (that's the "fun" part of the job!).
 
 Being able to debug a webstack is essential for a Full-Stack Software Engineer, and it takes practice to be a master of it.
 
@@ -15,7 +15,7 @@ Letâ€™s start with a very simple example. My server must:
     have a copy of the /etc/passwd file in /tmp
     have a file named /tmp/isworking containing the string OK
 
-Letâ€™s pretend that without these 2 elements, my web application cannot work.
+Let's pretend that without these 2 elements, my web application cannot work.
 
 Let's go through this example and fix the server.
 
@@ -58,7 +58,6 @@ Note that as you cannot use interactive software such as emacs or vi in your Bas
 ## Installing Docker
 
 For this project you will be given a container which you can use to solve the task. If you would like to have Docker so that you can experiment with it and/or solve this problem locally, you can install it on your machine, your Ubuntu 14.04 VM, or your Ubuntu 16.04 VM if you upgraded.
-
     [Mac OS](https://intranet.alxswe.com/rltoken/wuCgR0pVioCnvtMKTeMgdQ)
     [Windows](https://intranet.alxswe.com/rltoken/9nVKpuQIDJhZoLP4mZmbRA)
     [Ubuntu 14.04](https://intranet.alxswe.com/rltoken/crVTooJdN8U8wATMvG2-og) (Note that Docker for Ubuntu 14 is deprecated and you will have to make some adjustments to the instructions when installing)
