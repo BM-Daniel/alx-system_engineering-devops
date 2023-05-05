@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # Same as task 0 but status of nginx should be "* nginx is not running"
-sudo ln -f /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo sed -i "s/8080/80/g" /etc/nginx/sites-enabled/default
 sudo service nginx restart
 echo "" > /run/nginx.pid
