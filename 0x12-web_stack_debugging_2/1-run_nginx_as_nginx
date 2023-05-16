@@ -4,6 +4,9 @@
 # You cannot use apt-get remove
 # Write a Bash script that configures the container to fit the above requirements
 
+pkill -f apache2
+chmod 644 /etc/nginx/nginx.conf
+
 sed -i 's/80/8080/' /etc/nginx/sites-enabled/default
 sed -i "1i user nginx;" /etc/nginx/nginx.conf
 
