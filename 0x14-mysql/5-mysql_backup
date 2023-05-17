@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Write a Bash script that generates a MySQL dump and creates a compressed archive out of it
+
+DAY=$(date +"%d")
+MONTH=$(date +"%m")
+YEAR=$(date +"%Y")
+
+file="$DAY-$MONTH-$YEAR.tar.gz"
+
+mysqldump --all-databases --user=root --password="$1" > backup.sql
+tar -czvf "$file" backup.sql
