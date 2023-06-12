@@ -18,7 +18,7 @@ if __name__ == "__main__":
             id = int(sys.argv[1])
             user_response = requests.get('{}/users/{}'.format(URL, id)).json()
             todo_response = requests.get('{}/todos'.format(URL)).json()
-            username = user_response.get('name')
+            username = user_response.get('username')
 
             todo = list(filter(lambda x: x.get('userId') == id, todo_response))
             todo_total = len(todo)
