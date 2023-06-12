@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """
 A script to request info from a REST API. The todo list progress of the
 employee will be displayed
