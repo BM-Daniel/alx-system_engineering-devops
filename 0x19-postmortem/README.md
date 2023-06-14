@@ -1,5 +1,7 @@
 # Postmortem Project
 
+![UPS connected to a computer](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tdk.co.ke%2Fadvantages-of-using-uninterrupted-power-supply-ups%2F&psig=AOvVaw3sIpSSqqV7mabGij4DGpjR&ust=1686858523330000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCNDYuOrDw_8CFQAAAAAdAAAAABAO)
+
 ## Issue Summary
 
 The outage lasted for about 6 hours. That is from 10am GMT to 4pm GMT. The cashiers of the company at vending points could not render services to customers. About 40% of vending point cashiers had this issue.
@@ -22,3 +24,5 @@ We simply had to buy new batteries to replace the damaged UPS battery. For the t
 ## Corrective and Preventive Measures
 
 A voltage stabilizer has to be installed for electrical devices so that they are not destroyed during power outages and surges
+
+![Voltage Stabiliser](https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.made-in-china.com%2Fproduct%2FPC-DVR-10000va-Relay-Control-Automatic-Voltage-Stabilizer-701525202.html&psig=AOvVaw3ThA6NYKLIs0GGzLT6ImT9&ust=1686858618850000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCl85fEw_8CFQAAAAAdAAAAABAE)
