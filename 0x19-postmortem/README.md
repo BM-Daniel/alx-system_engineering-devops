@@ -1,6 +1,6 @@
 # Postmortem Project
 
-![UPS connected to a computer](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tdk.co.ke%2Fadvantages-of-using-uninterrupted-power-supply-ups%2F&psig=AOvVaw3sIpSSqqV7mabGij4DGpjR&ust=1686858523330000&source=images&cd=vfe&ved=0CBIQjRxqFwoTCNDYuOrDw_8CFQAAAAAdAAAAABAO)
+![UPS connected to a computer](https://advanti.com/var/images/product/366.440/81lrey3--ZL._SL1500_.jpg)
 
 ## Issue Summary
 
