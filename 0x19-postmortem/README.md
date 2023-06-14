@@ -1,9 +1,24 @@
-# Postmortem
+# Postmortem Project
 
-Any software system will eventually fail, and that failure can come stem from a wide range of possible factors: bugs, traffic spikes, security issues, hardware failures, natural disasters, human errorâ€¦ Failing is normal and failing is actually a great opportunity to learn and improve. Any great Software Engineer must learn from his/her mistakes to make sure that they won't happen again. Failing is fine, but failing twice because of the same issue is not.
+## Issue Summary
 
-A postmortem is a tool widely used in the tech industry. After any outage, the team(s) in charge of the system will write a summary that has 2 main goals:
+The outage lasted for about 6 hours. That is from 10am GMT to 4pm GMT. The cashiers of the company at vending points could not render services to customers. About 40% of vending point cashiers had this issue.
+During the early hours of that day, we had a power outage in the region. When power was restored, there was a surge which destroyed some components that employees use to operate.
 
-    To provide the rest of the company's employees easy access to information detailing the cause of the outage. Often outages can have a huge impact on a company, so managers and executives have to understand what happened and how it will impact their work.
-    And to ensure that the root cause(s) of the outage has been discovered and that measures are taken to make sure it will be fixed.
 
+## Timeline
+
+The issue was detected 15 minutes after power was restored. The cashiers who use the system couldn’t boot-up their systems and others too couldn’t access the site of the company.
+The sockets and UPS were tested and it was observed that the UPS had damaged batteries. For those who couldn’t access the site, we tried pinging other sites to see if they worked but they also didn’t. So we realized it was the cellular tower that the system uses that has the problem.
+We had to replace the UPS battery and also work on the cellular tower.
+
+
+## Root Cause
+
+The root cause of the issue was the surge in power when power was restored. The surge in power caused both the UPS and cell tower to be unstable which caused the damage.
+We simply had to buy new batteries to replace the damaged UPS battery. For the tower, the transmitter had to be fixed.
+
+
+## Corrective and Preventive Measures
+
+A voltage stabilizer has to be installed for electrical devices so that they are not destroyed during power outages and surges
