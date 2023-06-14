@@ -25,4 +25,4 @@ We simply had to buy new batteries to replace the damaged UPS battery. For the t
 
 A voltage stabilizer has to be installed for electrical devices so that they are not destroyed during power outages and surges
 
-![Voltage Stabiliser](https://www.google.com/url?sa=i&url=https%3A%2F%2Fm.made-in-china.com%2Fproduct%2FPC-DVR-10000va-Relay-Control-Automatic-Voltage-Stabilizer-701525202.html&psig=AOvVaw3ThA6NYKLIs0GGzLT6ImT9&ust=1686858618850000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCl85fEw_8CFQAAAAAdAAAAABAE)
+![Voltage Stabiliser](url?sa=i&url=https%3A%2F%2Fm.made-in-china.com%2Fproduct%2FPC-DVR-10000va-Relay-Control-Automatic-Voltage-Stabilizer-701525202.html&psig=AOvVaw3ThA6NYKLIs0GGzLT6ImT9&ust=1686858618850000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPCl85fEw_8CFQAAAAAdAAAAABAE)
